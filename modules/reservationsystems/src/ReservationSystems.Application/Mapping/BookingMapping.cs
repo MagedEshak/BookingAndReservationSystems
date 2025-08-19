@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Volo.Abp.AutoMapper;
 
 namespace ReservationSystems.Mapping
 {
@@ -15,15 +16,16 @@ namespace ReservationSystems.Mapping
         public BookingMapping()
         {
             CreateMap<Bookings, BookingDto>();
-            CreateMap<CreateUserDto, Bookings>()
+            CreateMap<CreateBookingDto, Bookings>()
                 .ForMember(b => b.ConcurrencyStamp, otp => otp.Ignore())
-                .ForMember(b => b.Bookings, otp => otp.Ignore())
+                .ForMember(b => b.Services, otp => otp.Ignore())
+                .ForMember(b => b.Users, otp => otp.Ignore())
                 .ForMember(b => b.TenantId, otp => otp.Ignore())
-                .ForMember(b => b.IsDeleted, otp => otp.Ignore())
-                .ForMember(b => b.ExtraProperties, otp => otp.Ignore())
-                .IgnoreCreationAuditedObjectProperties().IgnoreAuditedObjectProperties();
-            CreateMap<UpdateUserDto, User>()
+                .ForMember(b => b.IsDeleted, otp => otp.Ignore());
+
+            CreateMap<UpdateBookingDto, User>()
                 .ForMember(b => b.ConcurrencyStamp, otp => otp.Ignore())
+                .ForMember(b => b.Id, otp => otp.Ignore())
                 .ForMember(b => b.Bookings, otp => otp.Ignore())
                 .ForMember(b => b.TenantId, otp => otp.Ignore())
                 .ForMember(b => b.IsDeleted, otp => otp.Ignore())

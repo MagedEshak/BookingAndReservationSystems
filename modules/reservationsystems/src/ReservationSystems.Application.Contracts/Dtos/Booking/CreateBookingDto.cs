@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ReservationSystems.Dtos.Booking
 {
-    public class CreatelocationDto
+    public class CreateBookingDto
     {
         public DateTime? Date { get; set; }
         public Status? Status { get; set; }

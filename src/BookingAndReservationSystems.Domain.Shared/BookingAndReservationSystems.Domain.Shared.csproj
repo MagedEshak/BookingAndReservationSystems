@@ -36,6 +36,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\modules\reservationsystems\src\ReservationSystems.Domain.Shared\ReservationSystems.Domain.Shared.csproj" />
+    <ProjectReference Include="..\..\modules\reservationsystems\src\ReservationSystems.Domain.Shared\ReservationSystems.Domain.Shared.csproj" />
   </ItemGroup>
 
 </Project>

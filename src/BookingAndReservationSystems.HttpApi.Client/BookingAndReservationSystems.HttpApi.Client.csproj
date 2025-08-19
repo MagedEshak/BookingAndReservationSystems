@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\modules\reservationsystems\src\ReservationSystems.HttpApi.Client\ReservationSystems.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\modules\reservationsystems\src\ReservationSystems.HttpApi.Client\ReservationSystems.HttpApi.Client.csproj" />
     <ProjectReference Include="..\BookingAndReservationSystems.Application.Contracts\BookingAndReservationSystems.Application.Contracts.csproj" />
   </ItemGroup>
 

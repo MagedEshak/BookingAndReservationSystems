@@ -19,6 +19,7 @@
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Autofac" Version="9.3.1" />
     <ProjectReference Include="..\..\..\modules\reservationsystems\src\ReservationSystems.Domain\ReservationSystems.Domain.csproj" />
+    <ProjectReference Include="..\..\modules\reservationsystems\src\ReservationSystems.Domain\ReservationSystems.Domain.csproj" />
     <ProjectReference Include="..\BookingAndReservationSystems.EntityFrameworkCore\BookingAndReservationSystems.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\BookingAndReservationSystems.Application.Contracts\BookingAndReservationSystems.Application.Contracts.csproj" />
   </ItemGroup>

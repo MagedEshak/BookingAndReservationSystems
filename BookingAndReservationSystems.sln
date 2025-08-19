@@ -37,22 +37,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingAndReservationSystem
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservationSystems.Application", "..\modules\reservationsystems\src\ReservationSystems.Application\ReservationSystems.Application.csproj", "{CD7E98D2-BBE0-D668-440E-B59FA6402250}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservationSystems.Application.Contracts", "..\modules\reservationsystems\src\ReservationSystems.Application.Contracts\ReservationSystems.Application.Contracts.csproj", "{00A001B7-8201-F155-A9AA-9A1B84849A41}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservationSystems.Domain", "..\modules\reservationsystems\src\ReservationSystems.Domain\ReservationSystems.Domain.csproj", "{E61FD897-9804-0278-0365-A01EF6EFD4DD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservationSystems.Domain.Shared", "..\modules\reservationsystems\src\ReservationSystems.Domain.Shared\ReservationSystems.Domain.Shared.csproj", "{72BB76D9-0DC5-477C-BC1F-142E10658E1B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservationSystems.EntityFrameworkCore", "..\modules\reservationsystems\src\ReservationSystems.EntityFrameworkCore\ReservationSystems.EntityFrameworkCore.csproj", "{4D42E2E7-D49E-3558-6229-83925454E2AD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservationSystems.HttpApi", "..\modules\reservationsystems\src\ReservationSystems.HttpApi\ReservationSystems.HttpApi.csproj", "{1F16A757-3B4C-3125-5184-1581175B7EDA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservationSystems.HttpApi.Client", "..\modules\reservationsystems\src\ReservationSystems.HttpApi.Client\ReservationSystems.HttpApi.Client.csproj", "{4506FBE6-7F16-D136-6EA3-38C3421DDBC3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservationSystems.Installer", "..\modules\reservationsystems\src\ReservationSystems.Installer\ReservationSystems.Installer.csproj", "{BD9ED577-EB13-A62E-ADB5-9636AA67E790}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservationSystems.Application", "modules\reservationsystems\src\ReservationSystems.Application\ReservationSystems.Application.csproj", "{8BC3761D-04C1-E220-EBBF-E85CF3376C6D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservationSystems.Application.Contracts", "modules\reservationsystems\src\ReservationSystems.Application.Contracts\ReservationSystems.Application.Contracts.csproj", "{24F81A3C-35C2-A9D0-2D24-500B0968EC42}"
@@ -131,38 +115,6 @@ Global
 		{96E5259E-59A3-4FAF-BCD1-5BF8E74EF82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96E5259E-59A3-4FAF-BCD1-5BF8E74EF82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96E5259E-59A3-4FAF-BCD1-5BF8E74EF82C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CD7E98D2-BBE0-D668-440E-B59FA6402250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CD7E98D2-BBE0-D668-440E-B59FA6402250}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CD7E98D2-BBE0-D668-440E-B59FA6402250}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CD7E98D2-BBE0-D668-440E-B59FA6402250}.Release|Any CPU.Build.0 = Release|Any CPU
-		{00A001B7-8201-F155-A9AA-9A1B84849A41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00A001B7-8201-F155-A9AA-9A1B84849A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00A001B7-8201-F155-A9AA-9A1B84849A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{00A001B7-8201-F155-A9AA-9A1B84849A41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E61FD897-9804-0278-0365-A01EF6EFD4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E61FD897-9804-0278-0365-A01EF6EFD4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E61FD897-9804-0278-0365-A01EF6EFD4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E61FD897-9804-0278-0365-A01EF6EFD4DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{72BB76D9-0DC5-477C-BC1F-142E10658E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72BB76D9-0DC5-477C-BC1F-142E10658E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72BB76D9-0DC5-477C-BC1F-142E10658E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72BB76D9-0DC5-477C-BC1F-142E10658E1B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D42E2E7-D49E-3558-6229-83925454E2AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D42E2E7-D49E-3558-6229-83925454E2AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D42E2E7-D49E-3558-6229-83925454E2AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D42E2E7-D49E-3558-6229-83925454E2AD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1F16A757-3B4C-3125-5184-1581175B7EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F16A757-3B4C-3125-5184-1581175B7EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1F16A757-3B4C-3125-5184-1581175B7EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1F16A757-3B4C-3125-5184-1581175B7EDA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4506FBE6-7F16-D136-6EA3-38C3421DDBC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4506FBE6-7F16-D136-6EA3-38C3421DDBC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4506FBE6-7F16-D136-6EA3-38C3421DDBC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4506FBE6-7F16-D136-6EA3-38C3421DDBC3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BD9ED577-EB13-A62E-ADB5-9636AA67E790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD9ED577-EB13-A62E-ADB5-9636AA67E790}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD9ED577-EB13-A62E-ADB5-9636AA67E790}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD9ED577-EB13-A62E-ADB5-9636AA67E790}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8BC3761D-04C1-E220-EBBF-E85CF3376C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8BC3761D-04C1-E220-EBBF-E85CF3376C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BC3761D-04C1-E220-EBBF-E85CF3376C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -214,14 +166,6 @@ Global
 		{EF480016-9127-4916-8735-D2466BDBC582} = {04DBDB01-70F4-4E06-B468-8F87850B22BE}
 		{70680696-BB1E-4383-BCB2-42C3767171FB} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 		{96E5259E-59A3-4FAF-BCD1-5BF8E74EF82C} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{CD7E98D2-BBE0-D668-440E-B59FA6402250} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{00A001B7-8201-F155-A9AA-9A1B84849A41} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{E61FD897-9804-0278-0365-A01EF6EFD4DD} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{72BB76D9-0DC5-477C-BC1F-142E10658E1B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{4D42E2E7-D49E-3558-6229-83925454E2AD} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{1F16A757-3B4C-3125-5184-1581175B7EDA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{4506FBE6-7F16-D136-6EA3-38C3421DDBC3} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{BD9ED577-EB13-A62E-ADB5-9636AA67E790} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{8BC3761D-04C1-E220-EBBF-E85CF3376C6D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{24F81A3C-35C2-A9D0-2D24-500B0968EC42} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{ED3289D3-ADC1-1AA6-D100-8AA50164A439} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}

@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\modules\reservationsystems\src\ReservationSystems.Application.Contracts\ReservationSystems.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\modules\reservationsystems\src\ReservationSystems.Application.Contracts\ReservationSystems.Application.Contracts.csproj" />
     <ProjectReference Include="..\BookingAndReservationSystems.Domain.Shared\BookingAndReservationSystems.Domain.Shared.csproj" />
   </ItemGroup>
   

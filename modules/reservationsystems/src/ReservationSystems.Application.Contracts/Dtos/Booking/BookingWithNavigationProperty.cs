@@ -1,4 +1,5 @@
-﻿using ReservationSystems.Dtos.User;
+﻿using ReservationSystems.Dtos.Services;
+using ReservationSystems.Dtos.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,6 @@ namespace ReservationSystems.Dtos.Booking
     {
         public BookingDto BookingDto { get; set; }
         public UserDto? UserDto { get; set; }
+        public ServicesDto? ServicesDto { get; set; }
     }
 }

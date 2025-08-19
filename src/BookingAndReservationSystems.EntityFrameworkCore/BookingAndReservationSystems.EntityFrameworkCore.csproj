@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\modules\reservationsystems\src\ReservationSystems.EntityFrameworkCore\ReservationSystems.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\modules\reservationsystems\src\ReservationSystems.Domain\ReservationSystems.Domain.csproj" />
+    <ProjectReference Include="..\..\modules\reservationsystems\src\ReservationSystems.EntityFrameworkCore\ReservationSystems.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\BookingAndReservationSystems.Domain\BookingAndReservationSystems.Domain.csproj" />
   </ItemGroup>
 
