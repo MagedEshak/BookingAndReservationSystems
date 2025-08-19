@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ReservationSystems.Dtos.Booking
 {
-    public class LocationWithNavigationProperty
+    public class BookingWithNavigationProperty
     {
         public BookingDto BookingDto { get; set; }
         public UserDto? UserDto { get; set; }
