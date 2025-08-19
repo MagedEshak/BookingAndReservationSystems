@@ -1,0 +1,55 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "dev-app": {
+      "projectType": "application",
+      "root": "projects/dev-app",
+      "sourceRoot": "projects/dev-app/src"
+    },
+    "reservation-systems": {
+      "projectType": "library",
+      "root": "projects/reservation-systems",
+      "sourceRoot": "projects/reservation-systems/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/reservation-systems/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/reservation-systems/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/reservation-systems/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/reservation-systems/src/test.ts",
+            "tsConfig": "projects/reservation-systems/tsconfig.spec.json",
+            "karmaConfig": "projects/reservation-systems/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/reservation-systems/**/*.ts",
+              "projects/reservation-systems/**/*.html"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

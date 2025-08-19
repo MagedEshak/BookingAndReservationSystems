@@ -1,0 +1,41 @@
+{
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "ReservationSystems.Domain": {
+      "path": "src/ReservationSystems.Domain/ReservationSystems.Domain.abppkg",
+      "folder": "src"
+    },
+    "ReservationSystems.Application.Contracts": {
+      "path": "src/ReservationSystems.Application.Contracts/ReservationSystems.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "ReservationSystems.Application": {
+      "path": "src/ReservationSystems.Application/ReservationSystems.Application.abppkg",
+      "folder": "src"
+    },
+    "ReservationSystems.EntityFrameworkCore": {
+      "path": "src/ReservationSystems.EntityFrameworkCore/ReservationSystems.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "ReservationSystems.HttpApi": {
+      "path": "src/ReservationSystems.HttpApi/ReservationSystems.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "ReservationSystems.HttpApi.Client": {
+      "path": "src/ReservationSystems.HttpApi.Client/ReservationSystems.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "ReservationSystems.Domain.Shared": {
+      "path": "src/ReservationSystems.Domain.Shared/ReservationSystems.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "ReservationSystems.Installer": {
+       "path": "src/ReservationSystems.Installer/ReservationSystems.Installer.abppkg",
+       "folder": "src"
+    }
+  }
+}

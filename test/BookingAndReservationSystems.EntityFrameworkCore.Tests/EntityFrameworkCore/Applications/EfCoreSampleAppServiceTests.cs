@@ -1,0 +1,10 @@
+using BookingAndReservationSystems.Samples;
+using Xunit;
+
+namespace BookingAndReservationSystems.EntityFrameworkCore.Applications;
+
+[Collection(BookingAndReservationSystemsTestConsts.CollectionDefinitionName)]
+public class EfCoreSampleAppServiceTests : SampleAppServiceTests<BookingAndReservationSystemsEntityFrameworkCoreTestModule>
+{
+
+}

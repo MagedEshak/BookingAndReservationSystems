@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "paths": {
+      "@reservation-systems": ["projects/reservation-systems/src/public-api.ts"],
+      "@reservation-systems/config": [
+        "projects/reservation-systems/config/src/public-api.ts"
+      ]
+    }
+  }
+}

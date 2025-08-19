@@ -1,0 +1,8 @@
+﻿using Volo.Abp;
+
+namespace BookingAndReservationSystems.EntityFrameworkCore;
+
+public abstract class BookingAndReservationSystemsEntityFrameworkCoreTestBase : BookingAndReservationSystemsTestBase<BookingAndReservationSystemsEntityFrameworkCoreTestModule>
+{
+
+}

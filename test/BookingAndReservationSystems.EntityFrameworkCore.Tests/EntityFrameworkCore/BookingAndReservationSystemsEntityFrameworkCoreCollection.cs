@@ -1,0 +1,9 @@
+﻿using Xunit;
+
+namespace BookingAndReservationSystems.EntityFrameworkCore;
+
+[CollectionDefinition(BookingAndReservationSystemsTestConsts.CollectionDefinitionName)]
+public class BookingAndReservationSystemsEntityFrameworkCoreCollection : ICollectionFixture<BookingAndReservationSystemsEntityFrameworkCoreFixture>
+{
+
+}

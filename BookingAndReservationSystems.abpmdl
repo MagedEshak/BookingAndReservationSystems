@@ -1,0 +1,101 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "4.3.1",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account": {
+      "version": "9.3.1",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "9.3.1",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "9.3.1",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "9.3.1",
+      "isInstalled": true
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.3.1",
+      "isInstalled": true
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.3.1",
+      "isInstalled": true
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.3.1",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "BookingAndReservationSystems.Application": {
+      "path": "src/BookingAndReservationSystems.Application/BookingAndReservationSystems.Application.abppkg",
+      "folder": "src"
+    },
+    "BookingAndReservationSystems.Application.Tests": {
+      "path": "test/BookingAndReservationSystems.Application.Tests/BookingAndReservationSystems.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "BookingAndReservationSystems.Domain.Shared": {
+      "path": "src/BookingAndReservationSystems.Domain.Shared/BookingAndReservationSystems.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "BookingAndReservationSystems.Application.Contracts": {
+      "path": "src/BookingAndReservationSystems.Application.Contracts/BookingAndReservationSystems.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "BookingAndReservationSystems.HttpApi": {
+      "path": "src/BookingAndReservationSystems.HttpApi/BookingAndReservationSystems.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "BookingAndReservationSystems.HttpApi.Client": {
+      "path": "src/BookingAndReservationSystems.HttpApi.Client/BookingAndReservationSystems.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "BookingAndReservationSystems.EntityFrameworkCore.Tests": {
+      "path": "test/BookingAndReservationSystems.EntityFrameworkCore.Tests/BookingAndReservationSystems.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "BookingAndReservationSystems.EntityFrameworkCore": {
+      "path": "src/BookingAndReservationSystems.EntityFrameworkCore/BookingAndReservationSystems.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "BookingAndReservationSystems.TestBase": {
+      "path": "test/BookingAndReservationSystems.TestBase/BookingAndReservationSystems.TestBase.abppkg",
+      "folder": "test"
+    },
+    "BookingAndReservationSystems.Domain.Tests": {
+      "path": "test/BookingAndReservationSystems.Domain.Tests/BookingAndReservationSystems.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "BookingAndReservationSystems.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/BookingAndReservationSystems.HttpApi.Client.ConsoleTestApp/BookingAndReservationSystems.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "BookingAndReservationSystems.DbMigrator": {
+      "path": "src/BookingAndReservationSystems.DbMigrator/BookingAndReservationSystems.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "BookingAndReservationSystems.HttpApi.Host": {
+      "path": "src/BookingAndReservationSystems.HttpApi.Host/BookingAndReservationSystems.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "BookingAndReservationSystems.Domain": {
+      "path": "src/BookingAndReservationSystems.Domain/BookingAndReservationSystems.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}

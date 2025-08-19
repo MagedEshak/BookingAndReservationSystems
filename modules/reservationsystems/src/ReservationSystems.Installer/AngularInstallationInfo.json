@@ -1,0 +1,46 @@
+﻿{
+  "packages":[
+    {
+      "appRoutingModuleConfiguration":{
+        "imports":[
+          {
+            "names":[
+              "RESERVATION_SYSTEMS_ROUTES"
+            ],
+            "namespace": "@reservation-systems"
+          } 
+        ],
+        "routes":[
+          "{ path: 'reservation-systems', children: RESERVATION_SYSTEMS_ROUTES,}"
+        ]
+      },
+      "appModuleConfiguration":{
+        "imports":[
+          {
+            "names":[
+              "provideReservationSystems"
+            ],
+            "namespace": "@reservation-systems/config"
+          }
+        ],
+        "providerNames":[
+          "provideReservationSystems()"
+        ]
+      },
+      "tsJsonPathRecordConfigurations":[
+        {
+          "name": "@reservation-systems",
+          "paths": [
+            "angular/projects/reservation-systems/src/public-api.ts"
+          ]
+        },
+        {
+          "name": "@reservation-systems/config",
+          "paths": [
+            "angular/projects/reservation-systems/config/src/public-api.ts"
+          ]
+        }
+      ]
+    }
+  ]
+}

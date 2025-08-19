@@ -1,0 +1,9 @@
+﻿using BookingAndReservationSystems.EntityFrameworkCore;
+using Xunit;
+
+namespace BookingAndReservationSystems.EntityFrameworkCore;
+
+public class BookingAndReservationSystemsEntityFrameworkCoreCollectionFixtureBase : ICollectionFixture<BookingAndReservationSystemsEntityFrameworkCoreFixture>
+{
+
+}
