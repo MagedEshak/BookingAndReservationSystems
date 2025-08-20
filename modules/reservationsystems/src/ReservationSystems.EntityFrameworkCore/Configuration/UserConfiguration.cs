@@ -14,7 +14,7 @@ namespace ReservationSystems.Configuration
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.ToTable("Users");
+            builder.ToTable("User");
             builder.ConfigureByConvention();
 
             builder.HasMany<Bookings>(b=>b.Bookings)
