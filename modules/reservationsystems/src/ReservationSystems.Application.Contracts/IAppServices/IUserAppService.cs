@@ -13,7 +13,7 @@ namespace ReservationSystems.IAppServices
     public interface IUserAppService
     {
         Task<UserDto> GetUserByIdAsync(Guid id);
-        Task<PagedResultDto<UserDto>> GetAllUsersAsync(PagedAndSortedResultRequestDto input);
+        Task<PagedResultDto<UserWithNavigtionProperty>> GetAllUsersAsync(PagedAndSortedResultRequestDto input);
         Task<UserDto> CreateUserAsync(CreateUserDto createUserDto);
         Task<UserDto> UpdateUserAsync(Guid id,UpdateUserDto createUserDto);
         Task<bool> DeleteUserAsync(Guid id);

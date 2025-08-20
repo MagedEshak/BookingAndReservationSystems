@@ -10,7 +10,7 @@ namespace ReservationSystems.Dtos.User
 {
     public class UserWithNavigtionProperty
     {
-        public UserDto UserDto { get; set; }
+        public UserDto UserDtos { get; set; }
         public ICollection<BookingDto>? BookingDtos { get; set; }=new List<BookingDto>();
         public ICollection<ReviewsDto>? ReviewsDtos { get; set; }=new List<ReviewsDto>();
     }
