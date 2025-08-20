@@ -1,4 +1,5 @@
 ﻿using ReservationSystems.Dtos.Booking;
+using ReservationSystems.Dtos.Location;
 using ReservationSystems.Dtos.Reviews;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace ReservationSystems.Dtos.Services
     public class ServicesWithNavigtionProperty
     {
         public ServicesDto ServicesDto { get; set; }
-        public ICollection<BookingDto>? Booking { get; set; } = new List<BookingDto>();
+        public ICollection<BookingDto>? BookingDtos { get; set; } = new List<BookingDto>();
         public ICollection<ReviewsDto>? ReviewsDtos { get; set; } = new List<ReviewsDto>();
     }
 }

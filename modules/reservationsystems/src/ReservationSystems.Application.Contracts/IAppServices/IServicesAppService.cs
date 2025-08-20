@@ -10,7 +10,7 @@ namespace ReservationSystems.IAppServices
 {
     public interface IServicesAppService
     {
-        Task<PagedResultDto<ServicesDto>> GetAllServicesAsync(PagedAndSortedResultRequestDto input);
+        Task<PagedResultDto<ServicesWithNavigtionProperty>> GetAllServicesAsync(PagedAndSortedResultRequestDto input);
         Task<ServicesDto> GetServiceByIdAsync(Guid id);
         Task<ServicesDto> CreateServiceAsync(CreateServiceDto createServicesDto);
         Task<ServicesDto> UpdateServiceAsync(Guid id, UpdateServiceDto updateServicesDto);

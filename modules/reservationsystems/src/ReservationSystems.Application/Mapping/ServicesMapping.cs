@@ -15,8 +15,9 @@ namespace ReservationSystems.Mapping
         public ServicesMapping()
         {
             CreateMap<Services, ServicesDto>()
-                 .ForMember(b => b.BookingDtos, otp => otp.MapFrom(src => src.Bookings))
-                 .ForMember(b => b.ReviewsDtos, otp => otp.MapFrom(src => src.Reviews));
+                .ForMember(dest => dest.LocationsCountry, opt => opt.MapFrom(src => src.Locations.Country))
+                   .ForMember(d => d.BookingDtos, opt => opt.MapFrom(src => src.Bookings))
+                   .ForMember(d => d.ReviewsDtos, opt => opt.MapFrom(src => src.Reviews));
             CreateMap<CreateServiceDto, Services>()
                  .ForMember(b => b.ConcurrencyStamp, otp => otp.Ignore())
                  .ForMember(b => b.Bookings, otp => otp.Ignore())

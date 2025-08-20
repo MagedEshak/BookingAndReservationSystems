@@ -15,7 +15,7 @@ namespace ReservationSystems.Mapping
         public LocationMapping()
         {
             CreateMap<Locations, LocationsDto>()
-                    .ForMember(b => b.ServicesDtos, otp => otp.MapFrom(src => src.Services)); ;
+                    .ForMember(b => b.ServicesDtos, otp => otp.MapFrom(src => src.Services));
             CreateMap<CreateLocationDto, Locations>()
                 .ForMember(b => b.ConcurrencyStamp, otp => otp.Ignore())
                 .ForMember(b => b.Services, otp => otp.Ignore())

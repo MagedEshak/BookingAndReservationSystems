@@ -10,6 +10,6 @@ namespace ReservationSystems.IRepositories
 {
     public interface IServicesRepository:IRepository<Services, Guid>
     {
-        Task<Services> GetServicesWithLocationAsync(Guid id);
+       
     }
 }

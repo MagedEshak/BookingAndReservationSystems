@@ -13,7 +13,7 @@ namespace ReservationSystems.Dtos.Services
         public string? Name { get; set; }
         public string? Description { get; set; }
         public decimal? Price { get; set; }
-        public Guid? LocationID { get; set; }
+        public string? LocationsCountry { get; set; }
         public bool? IsDeleted { get; set; }
         public string? ConcurrencyStamp { get; set; }
         public ICollection<BookingDto>? BookingDtos { get; set; } = new List<BookingDto>();
