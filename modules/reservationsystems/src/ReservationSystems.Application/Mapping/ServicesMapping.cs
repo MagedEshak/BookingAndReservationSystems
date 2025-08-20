@@ -21,6 +21,8 @@ namespace ReservationSystems.Mapping
                  .ForMember(b => b.ConcurrencyStamp, otp => otp.Ignore())
                  .ForMember(b => b.Bookings, otp => otp.Ignore())
                  .ForMember(b => b.Reviews, otp => otp.Ignore())
+                 .ForMember(b => b.Locations, otp => otp.Ignore())
+                 .ForMember(b => b.Id, otp => otp.Ignore())
                  .ForMember(b => b.TenantId, otp => otp.Ignore())
                  .ForMember(b => b.IsDeleted, otp => otp.Ignore());
             CreateMap<UpdateServiceDto, Services>()
@@ -28,6 +30,7 @@ namespace ReservationSystems.Mapping
                  .ForMember(b => b.Id, otp => otp.Ignore())
                  .ForMember(b => b.Bookings, otp => otp.Ignore())
                  .ForMember(b => b.Reviews, otp => otp.Ignore())
+                 .ForMember(b => b.Locations, otp => otp.Ignore())
                  .ForMember(b => b.TenantId, otp => otp.Ignore())
                  .ForMember(b => b.IsDeleted, otp => otp.Ignore());
         }

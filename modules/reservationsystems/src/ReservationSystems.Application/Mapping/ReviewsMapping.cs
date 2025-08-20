@@ -19,6 +19,7 @@ namespace ReservationSystems.Mapping
                 .ForMember(b => b.ConcurrencyStamp, otp => otp.Ignore())
                 .ForMember(b => b.Services, otp => otp.Ignore())
                 .ForMember(b => b.Users, otp => otp.Ignore())
+                .ForMember(b => b.Id, otp => otp.Ignore())
                 .ForMember(b => b.TenantId, otp => otp.Ignore())
                 .ForMember(b => b.IsDeleted, otp => otp.Ignore());
 

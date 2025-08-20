@@ -22,49 +22,49 @@ namespace ReservationSystems.Controller
             _userAppService = userAppService;
         }
         [HttpGet("AllUsers")]
-        public async Task<PagedResultDto<UserWithNavigtionProperty>> GetAllUsers(PagedAndSortedResultRequestDto input)
+        public async Task<PagedResultDto<UserWithNavigtionProperty>> GetAllUsers([FromQuery] PagedAndSortedResultRequestDto input)
         {
-            throw new NotImplementedException();
+            return await _userAppService.GetAllUsersAsync(input);
         }
         [HttpGet("GetUserById/{id}")]
         public async Task<UserDto> GetUserById(Guid id)
         {
-            throw new NotImplementedException();
+            return await _userAppService.GetUserByIdAsync(id);
         }
         [HttpGet("GetUserWithHisBookingsById/{id}")]
-        public async Task<UserDto> GetUserWithHisBookingsByIdAsync(Guid id)
+        public async Task<UserDto> GetUserWithHisBookingsById(Guid id)
         {
-            throw new NotImplementedException();
+            return await _userAppService.GetUserWithHisBookingsByIdAsync(id);
         }
         [HttpGet("GetUserWithHisReviewsById/{id}")]
-        public async Task<UserDto> GetUserWithHisReviewsByIdAsync(Guid id)
+        public async Task<UserDto> GetUserWithHisReviewsById(Guid id)
         {
-            throw new NotImplementedException();
+            return await _userAppService.GetUserWithHisReviewsByIdAsync(id);
         }
         [HttpGet("check-Email")]
-        public async Task<bool> CheckEmailAsync(string email)
+        public async Task<bool> CheckEmail(string email)
         {
-            throw new NotImplementedException();
+            return await _userAppService.CheckEmailAsync(email);
         }
         [HttpGet("check-Phone")]
-        public async Task<bool> CheckPhoneAsync(string phone)
+        public async Task<bool> CheckPhone(string phone)
         {
-            throw new NotImplementedException();
+            return await _userAppService.CheckPhoneAsync(phone);
         }
         [HttpPost]
-        public async Task<UserDto> CreateUserAsync(CreateUserDto createUserDto)
+        public async Task<UserDto> CreateUser([FromBody] CreateUserDto createUserDto)
         {
-            throw new NotImplementedException();
+            return await _userAppService.CreateUserAsync(createUserDto);
         }
         [HttpPatch("{id}")]
-        public async Task<UserDto> UpdateUserAsync(Guid id, UpdateUserDto updateUserDto)
+        public async Task<UserDto> UpdateUser(Guid id, [FromBody] UpdateUserDto updateUserDto)
         {
-            throw new NotImplementedException();
+            return await _userAppService.UpdateUserAsync(id, updateUserDto);
         }
         [HttpDelete("{id}")]
-        public async Task<bool> DeleteUserAsync(Guid id)
+        public async Task<bool> DeleteUser(Guid id)
         {
-            throw new NotImplementedException();
+            return await _userAppService.DeleteUserAsync(id);
         }
     }
 }

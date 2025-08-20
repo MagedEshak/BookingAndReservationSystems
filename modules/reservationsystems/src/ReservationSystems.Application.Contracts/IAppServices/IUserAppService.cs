@@ -12,6 +12,8 @@ namespace ReservationSystems.IAppServices
 {
     public interface IUserAppService
     {
+        Task<UserDto> GetUserWithHisBookingsByIdAsync(Guid id);
+        Task<UserDto> GetUserWithHisReviewsByIdAsync(Guid id);
         Task<UserDto> GetUserByIdAsync(Guid id);
         Task<PagedResultDto<UserWithNavigtionProperty>> GetAllUsersAsync(PagedAndSortedResultRequestDto input);
         Task<UserDto> CreateUserAsync(CreateUserDto createUserDto);
